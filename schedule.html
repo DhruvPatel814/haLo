@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>haLo RaiLs - Train Schedules</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Schedules</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="train.html">Trains</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="schedule-container">
+            <h2>Find Your Train's Schedule</h2>
+            <form action="/schedule" method="POST">
+                <label for="station">Station</label>
+                <select id="station" name="station">
+                    <option value="colombo">Colombo</option>
+                    <option value="galle">Galle</option>
+                    <option value="kandy">Kandy</option>
+                    <!-- Add more stations as needed -->
+                </select>
+
+                <button type="submit">Find Schedule</button>
+            </form>
+
+            <div class="schedule-results">
+                <!-- Add dynamic schedule results here -->
+                <h3>Train Schedule for Colombo</h3>
+                <ul>
+                    <li>09:30 AM - Colombo to Galle - WAG 7</li>
+                    <li>12:00 PM - Colombo to Kandy - Xpress</li>
+                    <!-- Add more schedule items dynamically -->
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

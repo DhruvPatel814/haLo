@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>haLo RaiLs - Find Trains</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Trains</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="train.html">Trains</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="search-container">
+            <form action="/search" method="POST">
+                <label for="from">From</label>
+                <input type="text" id="from" name="from" placeholder="Enter starting station" required>
+                
+                <label for="to">To</label>
+                <input type="text" id="to" name="to" placeholder="Enter destination" required>
+
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="quota">Quota</label>
+                <select id="quota" name="quota">
+                    <option value="general">General Quota</option>
+                    <option value="ladies">Ladies Quota</option>
+                </select>
+
+                <button type="submit">Search Trains</button>
+            </form>
+        </div>
+        
+        <div class="results-container">
+            <h2>Available Trains</h2>
+            <!-- Add dynamic search results here -->
+            <div class="train-result">
+                <p><strong>Train:</strong> WAG 7</p>
+                <p><strong>Price:</strong> ₹ 1,500</p>
+                <p><strong>Duration:</strong> 12 hrs</p>
+                <button>Book Now</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
